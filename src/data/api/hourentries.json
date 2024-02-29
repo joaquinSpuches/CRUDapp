@@ -69,5 +69,12 @@
     "timeSpent": 5,
     "issueUrl": "https://gitlab.com/ongresinc/interview/frontend-developer/-/issues/22",
     "date": "2024-01-20"
+  },
+  {
+    "id": 10,
+    "project": 6,
+    "timeSpent": 50,
+    "issueUrl": "https://gitlab.com/ongresinc/interview/frontend-developer/-/issues/22",
+    "date": "2024-01-20"
   }
 ]

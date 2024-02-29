@@ -35,13 +35,16 @@ const deleteEntry = async (id) => {
 function Edit({ data }) {
   const [formData, setFormData] = useState(data); // Set the initial form data to the data passed as a prop
   const URL_ID = "http://localhost:3000/api/hourEntries/";
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    const numericValue = parseInt(value); // Convert the value to a number because the original value was coming as a string
+  
+    // Check the input type and handle accordingly, for the number input type, parse the value to an integer 
+    const newValue = e.target.type === 'number' ? parseInt(value) : value;
+  
     setFormData({
       ...formData,
-      [name]: numericValue,
+      [name]: newValue,
     });
   };
 
@@ -89,6 +92,7 @@ function Edit({ data }) {
        <div>
          <label>Time spent: </label>
          <input
+         data-cy="timeSpent"
            type="number"
            name="timeSpent"
            value={formData.timeSpent}

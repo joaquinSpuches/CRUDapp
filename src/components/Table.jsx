@@ -43,7 +43,7 @@ export default function Table(props){
                   <td>
                     
                     {!editStates[e.id] ? <div className="flex justify-between pr-5"> {e.timeSpent} {/** doesn't render the time spent and edit button when you press edit */}
-                    <button onClick={() => toggleEdit(e.id)}>Edit</button></div> : null}
+                    <button onClick={() => toggleEdit(e.id)}>Edit hour</button></div> : null}
                   {/* Render Edit component only if edit state is true for this entry and thats when you press edit button. */}
                   {editStates[e.id] && <EditButton hoursSpent={e.timeSpent} id={e.id} />}
                   </td>
@@ -54,7 +54,7 @@ export default function Table(props){
                   <td>{projects[e.project].type}</td>
                   <td>{e.date}</td>
                   <td>
-                    <Link href={`/edit/${e.id}`}  >Edit </Link>
+                    <Link href={`/edit/${e.id}`} data-cy={e.id}  >Edit </Link>
                   </td>
                  
                 </tr>
