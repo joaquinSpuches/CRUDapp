@@ -1,0 +1,116 @@
+{
+    "customers": {
+        "id": {
+            "type": "number",
+            "min": 0,
+            "title": "ID",
+            "description": "Customer's unique identifier",
+            "mandatory": true
+        },
+        "name": {
+            "type": "text",
+            "title": "Name",
+            "description": "Customer's name",
+            "mandatory": true
+        },
+        "contact": {
+            "type": "email",
+            "title": "Contact",
+            "description": "Contact information",
+            "mandatory": false
+        },
+        "website": {
+            "type": "url",
+            "title": "Website",
+            "description": "Official website",
+            "mandatory": false
+        },
+        "since": {
+            "type": "date",
+            "title": "Customer Since",
+            "description": "The date in which this company became a customer",
+            "mandatory": true
+        }
+    },
+    "hourentries": {
+        "id": {
+            "type": "number",
+            "min": 0,
+            "title": "ID",
+            "description": "Entry's unique identifier",
+            "mandatory": true
+        },
+        "project": {
+            "type": "number",
+            "title": "Project",
+            "description": "Project this entry belongs to",
+            "mandatory": true
+        },
+        "timeSpent": {
+            "type": "time",
+            "title": "Time Spent",
+            "description": "Time spent on this task",
+            "mandatory": true,
+            "min": 1,
+            "max": 8
+        },
+        "issueUrl": {
+            "type": "url",
+            "title": "Issue URL",
+            "description": "GitLab URL related to this issue",
+            "mandatory": true
+        },
+        "date": {
+            "type": "date",
+            "title": "Date",
+            "description": "The date in which the task was done",
+            "mandatory": true
+        }
+    },
+    "projects": {
+        "id": {
+            "type": "number",
+            "min": 0,
+            "title": "ID",
+            "description": "Project's unique identifier",
+            "mandatory": true
+        },
+        "customer": {
+            "type": "number",
+            "title": "Customer",
+            "description": "Customer this project belongs to",
+            "mandatory": true
+        },
+        "name": {
+            "type": "text",
+            "title": "Name",
+            "description": "Name of the project",
+            "mandatory": true
+        },
+        "hours": {
+            "type": "number",
+            "title": "Hours",
+            "description": "Hours available for this project",
+            "mandatory": true
+        },
+        "type": {
+            "type": "text",
+            "title": "Type",
+            "description": "Type of project",
+            "options": ["Advisory", "Migration", "Monitoring", "PoC", "Support"],
+            "mandatory": true
+        },
+        "start": {
+            "type": "date",
+            "title": "Start",
+            "description": "The date this project starts",
+            "mandatory": true
+        },
+        "finish": {
+            "type": "date",
+            "title": "Finish",
+            "description": "The date this project finishes",
+            "mandatory": true
+        }
+    }
+}

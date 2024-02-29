@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "name": "Github",
+        "contact": "info@github.com",
+        "website": "https://github.com",
+        "since": "2023-02-01"
+    },
+    {
+        "id": 1,
+        "name": "Google",
+        "contact": "hello@google.com",
+        "website": "https://google.com",
+        "since": "2016-01-01"
+    },
+    {
+        "id": 2,
+        "name": "OpenAI",
+        "contact": "contact@openai.com",
+        "website": "https://openai.com",
+        "since": "2022-10-15"
+    },
+    {
+        "id": 3,
+        "name": "Amazon AWS",
+        "contact": "aws@amazon.com",
+        "website": "https://aws.amazon.com/",
+        "since": "2019-06-05"
+    },
+    {
+        "id": 4,
+        "name": "Oracle Cloud",
+        "contact": "cloud@oracle.com",
+        "website": "https://www.oracle.com/cloud/",
+        "since": "2021-11-11"
+    }
+]

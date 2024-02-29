@@ -1,0 +1,65 @@
+[
+    {
+        "id": 0,
+        "customer": 0,
+        "name": "Github Monitoring",
+        "hours": 250,
+        "type": "Monitoring",
+        "start": "2023-02-01",
+        "finish": "2024-12-31"
+    },
+    {
+        "id": 1,
+        "customer": 0,
+        "name": "Github Support",
+        "hours": 100,
+        "type": "Support",
+        "start": "2023-10-01",
+        "finish": "2024-12-31"
+    },
+    {
+        "id": 2,
+        "customer": 2,
+        "name": "OpenAI Migration",
+        "hours": 560,
+        "type": "Migration",
+        "start": "2024-01-10",
+        "finish": "2024-04-10"
+    },
+    {
+        "id": 3,
+        "customer": 2,
+        "name": "OpenAI Support",
+        "hours": 80,
+        "type": "Support",
+        "start": "2024-04-01",
+        "finish": "2024-06-30"
+    },
+    {
+        "id": 4,
+        "customer": 1,
+        "name": "Google Postgres Lab",
+        "hours": 200,
+        "type": "Advisory",
+        "start": "2023-10-01",
+        "finish": "2024-10-01"
+    },
+    {
+        "id": 5,
+        "customer": 3,
+        "name": "AWS Observability",
+        "hours": 400,
+        "type": "Advisory",
+        "start": "2019-07-01",
+        "finish": "2024-07-01"
+    },
+    {
+        "id": 6,
+        "customer": 4,
+        "name": "StackGres Benchmark",
+        "hours": 100,
+        "type": "PoC",
+        "start": "2024-02-01",
+        "finish": "2024-06-01"
+    }
+]

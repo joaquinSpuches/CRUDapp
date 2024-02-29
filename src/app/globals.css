@@ -17,17 +17,28 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #1d1d1d;
+  background-color: white
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th{
+  border: 1px solid #1d1d1d;
+  padding: 8px;
+  text-align: left;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="date"], input[type="time"], input[type="file"], input[type="url"], input[type="tel"], input[type="search"], input[type="color"], input[type="range"], input[type="checkbox"], input[type="radio"], select, textarea{
+  border: 1px solid #1d1d1d;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+form{
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
