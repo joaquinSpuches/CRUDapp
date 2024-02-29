@@ -1,3 +1,25 @@
+download repository 
+
+requires Node.js
+
+run "npm install" to install all the dependencies
+
+"npm run dev" to start running the app in localhost:3000
+
+then run "npx cypress open" to open cypress testing enviroment.
+
+choose e2e process then the browser
+
+begin test process 
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
