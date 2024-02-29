@@ -1,6 +1,6 @@
 download repository 
 
-requires Node.js
+
 
 run "npm install" to install all the dependencies
 
