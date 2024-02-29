@@ -32,9 +32,9 @@ const deleteEntry = async (id) => {
   }
 };
 
-export default function Edit({ data }) {
+function Edit({ data }) {
   const [formData, setFormData] = useState(data); // Set the initial form data to the data passed as a prop
-
+  const URL_ID = "http://localhost:3000/api/hourEntries/";
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -58,6 +58,8 @@ export default function Edit({ data }) {
       update ? alert("Hours updated") : alert("Error updating hours");
     }
   };
+
+
   const handleDelete = async () => {
     const confirmDelete = window.confirm(
       "Are you sure you want to delete this entry?"
@@ -72,53 +74,61 @@ export default function Edit({ data }) {
     }
   };
 
+
   return (
-    <div className="flex justify-center max-w-50">
-      <form className="flex flex-col justify-center" onSubmit={handleSubmit}>
-        <div>
-          <label>ID: </label>
-          <input type="text" name="project" value={formData.id} readOnly />
-        </div>
-        <div>
-          <label>Time spent: </label>
-          <input
-            type="number"
-            name="timeSpent"
-            value={formData.timeSpent}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Issue: </label>
-          <input
-            type="text"
-            name="issueUrl"
-            value={formData.issueUrl}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Date: </label>
-          <input
-            type="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex w-full p-4 justify-between">
-          <button
-            className=" bg-red-500 p-3 rounded-xl "
-            type="button"
-            onClick={handleDelete}
-          >
-            Delete
-          </button>
-          <button className=" bg-green-500 p-3 rounded-xl" type="submit">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+   <div className="flex flex-col justify-center">
+
+     <button className="bg-blue-500 p-3 rounded-xl max-w-52 self-center" onClick={() => window.history.back()}>Back</button>
+     <div className="flex justify-center max-w-50">
+     
+     <form className="flex flex-col justify-center" onSubmit={handleSubmit}>
+       <div>
+         <label>ID: </label>
+         <input type="text" name="project" value={formData.id} readOnly />
+       </div>
+       <div>
+         <label>Time spent: </label>
+         <input
+           type="number"
+           name="timeSpent"
+           value={formData.timeSpent}
+           onChange={handleChange}
+         />
+       </div>
+       <div>
+         <label>Issue: </label>
+         <input
+           type="text"
+           name="issueUrl"
+           value={formData.issueUrl}
+           onChange={handleChange}
+         />
+       </div>
+       <div>
+         <label>Date: </label>
+         <input
+           type="date"
+           name="date"
+           value={formData.date}
+           onChange={handleChange}
+         />
+       </div>
+       <div className="flex w-full p-4 justify-between">
+         <button
+           className=" bg-red-500 p-3 rounded-xl "
+           type="button"
+           onClick={handleDelete}
+         >
+           Delete
+         </button>
+         <button className=" bg-green-500 p-3 rounded-xl" type="submit">
+           Submit
+         </button>
+       </div>
+     </form>
+   </div>
+   </div>
   );
 }
+
+export default Edit;
